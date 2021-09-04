@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		practical 9
+	</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<body style="background-color: #00004d" ng-app="myapp">
+	<font color="ffbb33" size="5px">
+		<div ng-controller="mycontroller">
+			<center>
+			First name : <input type="text" name="fname" ng-model="fname"><br>
+			Last name : <input type="text" name="lname" ng-model="lname"><br>
+			Dob : <input type="text" name="dob" ng-model="dob"><br>
+			Age : <input type="text" name="age" ng-model="age"><br>
+			Mobile no. : <input type="number" name="no" ng-model="m_no"><br>
+			Address : <input type="text" name="addr" ng-model="addr"><br>
+
+			<h3><u>You are Entering : </u></h3>
+			<label>First name : </label>{{fname}}<br>
+			<label>Last name : </label>{{lname}}<br>
+			<label>Date Of Birth : </label>{{dob}}<br>fname
+			<label>Age : </label>{{age}}<br>
+			<label>Mobile no. : </label>{{m_no}}<br>
+			<label>Address : </label>{{addr}}<br>
+		</center>
+		</div>
+		<script>
+			var app=angular.module('myapp',[]);
+			app.controller('mycontroller',function($scope){
+				$scope.fname="";
+				$scope.lname="";
+				$scope.dob="";
+				$scope.age="";
+				$scope.m_no="";
+				$scope.addr="";
+			});
+		</script>
+	</font>
+</body>
+</html>
