@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial</title>
+</head>
+<body>
+		<center>
+		<script type="text/javascript">
+			function fact()
+			{
+				var n =document.getElementById("no.").value;
+				var fact_no=1;
+				for(i=1;i<=n;i++)
+				{
+					fact_no=fact_no*i;
+				}
+				document.getElementById("answer").value=fact_no;
+				//document.write(fact_no);
+			}
+		</script>
+		<form name="factorial">
+		<font size="5">
+		Enter a number : <input type="number" name="no." id="no."><br>
+		Answer : <input type="text" name="answer" id="answer"><br><br>
+		<button style="height: 50px;width:90px"name="Factorial" value="factorial" onclick="fact()">Factorial</button>
+
+		</font>
+		</form>
+</body>
+</html>
