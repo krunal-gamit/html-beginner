@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOX TYPE</title>
+</head>
+
+<style type="text/css">
+	body{
+	background-color: white;
+	text-align: center;
+	font-family: Raleway;
+}
+h1{
+	font-family: Raleway;
+
+}
+
+div.a
+{
+	width:530px;
+	border:10px solid blue;
+	padding:5px,10px,15px,20px;
+	margin: 5px,10px,15px,20px;
+}
+
+div.a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: initial;
+}
+
+div.a:hover {
+  overflow: visible;
+}
+
+
+div.b
+{	
+	margin-top: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: inherit;
+	width:100px;
+	
+}
+div.b:hover
+{
+	overflow: scroll;
+}
+</style>
+
+<body>
+<h1> Box Model</h1>
+<p>This is outside the box model</p>
+<div class="a">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo nunc, rutrum vitae dapibus eget, sollicitudin congue magna. Nullam vitae lectus turpis. Suspendisse gravida mollis hendrerit. Donec sit amet tortor mauris. Morbi non purus nec ex scelerisque viverra.<br> Donec sodales, lectus id efficitur ornare, nunc erat gravida orci, non tincidunt purus nisl sed justo. Nullam quis iaculis lectus. Aenean feugiat hendrerit ultrices. <br>
+Morbi turpis mi, sollicitudin dictum porttitor vel, fermentum sed enim. Fusce placerat fermentum imperdiet.<br>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec convallis mi et ante fringilla, vel faucibus nisi tincidunt. Cras.
+</div>
+
+<div class="b">
+	Hello Box Flow Model
+</div>
+
+</body>
+</html>
