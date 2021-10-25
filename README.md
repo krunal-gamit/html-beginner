@@ -35,4 +35,8 @@ iframeHTML.html
 
 buttonHover.html
 
+list-drop-down.html
+
+radio-button.html
+
 socials.html
